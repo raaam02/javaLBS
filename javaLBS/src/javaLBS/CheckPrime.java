@@ -2,7 +2,7 @@ package javaLBS;
 
 public class CheckPrime {
     public static void main(String[] args) {
-        int number = 29; // You can change this number to test with other numbers
+        int number = 29;
         if (isPrime(number)) {
             System.out.println(number + " is a prime number.");
         } else {
