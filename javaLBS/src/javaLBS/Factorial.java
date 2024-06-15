@@ -1,13 +1,12 @@
 package javaLBS;
 
 public class Factorial {
-	public static int number = 8;
-	public static int fact = 1;
 	public static int getFactorial(int num) {
 		if(num == 0) {
-			return fact = 1;
+			return 1;
 		}
 		else {
+			int fact = 1;
 			for(int i=1; i<=num; i++) {
 				fact *= i;
 			}
@@ -15,7 +14,8 @@ public class Factorial {
 		}
 	}
 	public static void main(String[] args) {
-		 System.out.println(getFactorial(number));
+		int number = 7;
+		System.out.println(getFactorial(number));
 		 
 	}
 
