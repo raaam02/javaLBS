@@ -1,4 +1,4 @@
-package javaLBS;
+package Arrays;
 
 
 public class MedianOfSortedArrays {
