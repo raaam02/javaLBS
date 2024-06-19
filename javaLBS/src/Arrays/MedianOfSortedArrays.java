@@ -22,7 +22,7 @@ public class MedianOfSortedArrays {
 				}
 			}
 		}
-		int median = (arr3[arr1.length-1] + arr3[arr1.length])/2;
+		double median = (arr3[arr1.length-1] + arr3[arr1.length]) / 2.0;
 		System.out.println(median);
 	}
 }
