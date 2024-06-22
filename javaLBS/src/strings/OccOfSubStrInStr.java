@@ -2,19 +2,19 @@ package strings;
 
 public class OccOfSubStrInStr {
 	
-	public static int countOccOfSubStr(String str, String subStr) {
+	public static int countOccurrencesOfSubstring(String str, String subStr) {
 		int count = 0;
 
-		for (int i = 0; i < str.length()-subStr.length()+ 1; i++){
+		for (int i = 0; i <= str.length()-subStr.length(); i++){
 			if (str.charAt(i) == subStr.charAt(0)) {
-				boolean isNotSubStr = false;
+				boolean matchFound = true;
 				for (int j = 1; j < subStr.length(); j++) {
 					if (subStr.charAt(j) != str.charAt(i + j)) {
-						isNotSubStr = true;
+						matchFound = false;
 						break;
 					}
 				}
-				if (isNotSubStr == false) {
+				if (matchFound) {
 					count++;
 				}
 			}
@@ -25,17 +25,10 @@ public class OccOfSubStrInStr {
 	
 	public static void main(String[] args) {
 		String string = "github UserName: raaam02 raaam02 raaam02 raaam02";
-		String subString = "raaam02";
+		String subString = "ram02";
 		
 		System.out.println("'" + subString + "'" +
-		" occur " + countOccOfSubStr(string, subString) +
-		" in '" + string + "'");
+		" occur " + countOccurrencesOfSubstring(string, subString) +
+		" times in '" + string + "'");
 	}
 }
-
-
-
-
-
-
-
